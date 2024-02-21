@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class pemilihan13 {
     public static void main(String[] args) {
         float tugas, kuis, uts, uas, total;
-        
         String pesan, pesan1;
+
         Scanner input13 = new Scanner(System.in);
 
         System.out.println("Program Menghitung Nila Akhir");
@@ -20,7 +20,7 @@ public class pemilihan13 {
         System.out.print("Masukkan nilai UAS   :");
         uas = input13.nextFloat();
 
-        if (tugas <= 100 && kuis <= 100 && uts <= 100 && uas <=100) {
+        if (tugas <= 100 && tugas >= 0 && kuis <= 100 && kuis >= 0 && uts <= 100 && uts >= 0 && uas <=100 && uas >= 0) {
             total = (tugas * 0.2F) + (kuis * 0.2F) + (uts * 0.3F) + (uas * 0.3F);
             
             if (total <=100 && total > 80) {
