@@ -2,7 +2,7 @@ package P1;
 
 import java.util.Scanner;
 
-public class pemilihan1_13 {
+public class pemilihan13 {
     public static void main(String[] args) {
         float tugas, kuis, uts, uas, total;
         
