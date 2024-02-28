@@ -14,14 +14,18 @@ public class BukuMain13 {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        Buku13 bk2 = new Buku13();
-        bk2.judul = "How to Train Your Dragon";
-        bk2.pengarang = "Cressida Cowell";
-        bk2.halaman = 432;
-        bk2.stok = 0;
-        bk2.harga = 275000;
+        // Buku13 bk2 = new Buku13();
+        // bk2.judul = "How to Train Your Dragon";
+        // bk2.pengarang = "Cressida Cowell";
+        // bk2.halaman = 432;
+        // bk2.stok = 0;
+        // bk2.harga = 275000;
 
+        // bk2.tampilInformasi();
+        // bk2.terjual(4);
+
+        Buku13 bk2 = new Buku13("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+        bk2.terjual(11);
         bk2.tampilInformasi();
-        bk2.terjual(4);
     }
 }

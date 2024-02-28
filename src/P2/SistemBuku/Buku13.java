@@ -12,6 +12,18 @@ public class Buku13 {
         System.out.println("Harga: " + harga);
     }
 
+    public Buku13() {
+
+    }
+
+    public Buku13(String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
+    }
+
     void terjual(int jml) {
         if (stok > 0 && stok >= jml) {
             stok -=jml;
