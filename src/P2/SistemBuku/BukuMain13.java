@@ -20,6 +20,8 @@ public class BukuMain13 {
         bk2.halaman = 432;
         bk2.stok = 0;
         bk2.harga = 275000;
+
         bk2.tampilInformasi();
+        bk2.terjual(4);
     }
 }
