@@ -27,5 +27,9 @@ public class BukuMain13 {
         Buku13 bk2 = new Buku13("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku13 bkGilangPurnomo = new Buku13("Spiderman", "Gilang Purnomo", 100, 20, 50000);
+        bkGilangPurnomo.terjual(8);
+        bkGilangPurnomo.tampilInformasi();
     }
 }
