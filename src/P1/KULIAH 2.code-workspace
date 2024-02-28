@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Pratikum Algoritma dan Struktur Data/PrakASD_1F_13/src/P1",
+			"coba/src"
+		],
+		"java.project.outputPath": "Pratikum Algoritma dan Struktur Data/PrakASD_1F_13/bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		]
+	}
+}

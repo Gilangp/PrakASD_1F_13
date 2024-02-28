@@ -85,7 +85,7 @@ public class array13 {
             totalsks += sks[j];
 
             // Menampilkan hasil konversi nilai per mata kuliah
-            System.out.format("| %-40s | %-4d | %-5.1f | %-11s | %-12.1f |\n", matkul[j], sks[j], nilaiAngka[j],
+            System.out.printf("| %-40s | %-4d | %-5.1f | %-11s | %-12.1f |\n", matkul[j], sks[j], nilaiAngka[j],
                     nilaiHuruf[j], nilaiSetara[j]);
         }
 
@@ -93,7 +93,7 @@ public class array13 {
             double nilaiAkhir = totalBobot / totalsks;
             System.out.println(
                     "=====================================================================================================");
-            System.out.format("IP   %-4.2f\n", nilaiAkhir);
+            System.out.printf("IP   %-4.2f\n", nilaiAkhir);
             System.out.println(
                     "=====================================================================================================");
         }
