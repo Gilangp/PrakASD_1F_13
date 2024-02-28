@@ -7,7 +7,7 @@ public class Buku13 {
     void tampilInformasi() {
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: " + pengarang);
-        System.out.println("Jumlah halamn: " + halaman);
+        System.out.println("Jumlah halaman: " + halaman);
         System.out.println("Sisa stok: " + stok);
         System.out.println("Harga: " + harga);
     }
@@ -26,7 +26,7 @@ public class Buku13 {
 
     void terjual(int jml) {
         if (stok > 0 && stok >= jml) {
-            stok -=jml;
+            stok -= jml;
         } else {
             System.out.println("Stok sudah habis");
         }
@@ -38,5 +38,23 @@ public class Buku13 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    int hitungHargaTotal(int terjual) {
+        return harga * terjual;
+    }
+
+    int hitungDiskon(int totalHarga) {
+        if (totalHarga > 150000 ) {
+            return (totalHarga * 12/100); // diskon 12%
+        } else if (totalHarga >= 75000 && totalHarga <= 150000 ) {
+            return (totalHarga * 5/100); // diskon 5%
+        } else {
+            return 0;
+        }
+    }
+
+    int hitungHargaBayar(int totalHarga) {
+        return totalHarga - hitungDiskon(totalHarga);
     }
 }
