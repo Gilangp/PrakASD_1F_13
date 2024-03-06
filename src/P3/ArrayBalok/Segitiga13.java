@@ -8,4 +8,12 @@ public class Segitiga13 {
         alas = a;
         tinggi = t;
     }
+
+    public int hitungLuas() {
+        return 1/2 * alas * tinggi;
+    }
+
+    public int hitungKeliling() {
+        return alas + tinggi + (int) Math.sqrt(alas * alas + tinggi * tinggi);
+    }
 }
