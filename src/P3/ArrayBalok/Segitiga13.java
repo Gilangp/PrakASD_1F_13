@@ -10,7 +10,7 @@ public class Segitiga13 {
     }
 
     public int hitungLuas() {
-        return 1/2 * alas * tinggi;
+        return alas * tinggi * 1/2;
     }
 
     public int hitungKeliling() {
