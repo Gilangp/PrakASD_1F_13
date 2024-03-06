@@ -17,11 +17,11 @@ public class InfoMhsArray {
             input13.nextLine();
 
             System.out.print("Masukan jenis kelamin (L/P) : ");
-            char jenisKelamin = input13.next().toLowerCase().charAt(0);
-            while ( jenisKelamin == 'L' && jenisKelamin != 'P') {
+            char jenisKelamin = input13.next().charAt(0);
+            while (!(jenisKelamin == 'L' || jenisKelamin == 'P')) {
                 System.out.println("Jenis kelamin tidak valid");
                 System.out.println("Masukkan Jenis Kelamin lagi :");
-                jenisKelamin = input13.next().toLowerCase().charAt(0);
+                jenisKelamin = input13.next().charAt(0);
             }
 
             System.out.print("Masukkan IPK : ");
