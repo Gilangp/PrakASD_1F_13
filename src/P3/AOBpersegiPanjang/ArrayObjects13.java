@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class ArrayObjects13 {
     public static void main(String[] args) {
+        Persegi13[] pgArray = new Persegi13[100];
+        pgArray[5].sisi = 20;
+
         PersegiPanjang13[][] ppArray = new PersegiPanjang13[3][2];
         Scanner sc = new Scanner(System.in);
 
