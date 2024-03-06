@@ -31,10 +31,12 @@ public class InfoMhsArray {
             mhsArray[i] = new InformasiMhs(namaMhs, nim, jenisKelamin, ipk);
         }
 
-        // menampilkan Informasi Mahasiswa
-        for (int i = 0; i < mhsArray.length; i++) {
-            System.out.println("Data Mahasiswa ke-" + (i+1));
-            mhsArray[i].tampilInformasi();
-        }
+        // menghitung rata- rata ipk
+        double rataIpk = mhsArray[0].hitungRataRataIpk(mhsArray);
+        System.out.println("Rata - rata IPK: " + rataIpk);
+
+        // menampilkan Informasi Mahasiswa dari ipk terbesar
+        InformasiMhs ipkTerbesar = mhsArray[0].ipkTerbesar(mhsArray);
+        ipkTerbesar.tampilInformasi();
     }
 }
