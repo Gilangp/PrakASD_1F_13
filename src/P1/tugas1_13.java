@@ -18,7 +18,7 @@ public class tugas1_13 {
             {"BOGOR", " "},
             {"PEKALONGAN", " "},
             {"SEMARANG", " "},
-            {"SURABAYA", " "},
+            {"SURABAYA", " "}, 
             {"MALANG", " "},
             {"TEGAL", " "}
         };
