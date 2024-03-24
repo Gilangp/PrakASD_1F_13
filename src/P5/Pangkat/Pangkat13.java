@@ -3,6 +3,11 @@ package P5.Pangkat;
 public class Pangkat13 {
     public int nilai, pangkat;
 
+    public Pangkat13 (int nilai, int pgt) {
+        this.nilai = nilai;
+        pangkat = pgt;
+    }
+
     int pangkatBF(int a, int n) {
         int hasil = 1;
         for (int i = 0; i < n ; i++) {
