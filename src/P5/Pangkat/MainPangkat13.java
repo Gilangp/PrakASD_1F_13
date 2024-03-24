@@ -20,7 +20,7 @@ public class MainPangkat13 {
 
         System.out.println("Menu");
         System.out.println("1. Perhitungan pangkat menggunakan method Brute Force");
-        System.out.println("2. Perhitungan pangkat menggunakan Devide and Conquer");
+        System.out.println("2. Perhitungan pangkat menggunakan method Devide and Conquer");
         int pilihan = input13.nextInt();
 
         switch (pilihan) {
