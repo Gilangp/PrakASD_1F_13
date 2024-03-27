@@ -23,5 +23,10 @@ public class Main13 {
         System.out.println("Data setelah diturunkan secara Asc berdasarkan stock");
         listBuku.bubbleSort();
         listBuku.tampil();
+
+        System.out.println("********************************************************************************");
+        System.out.println("Data setelah diturunkan secara Desc berdasarkan stock Menggunakan selection sort");
+        listBuku.selectionSort();
+        listBuku.tampil();
     }
 }
