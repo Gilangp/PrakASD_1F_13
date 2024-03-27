@@ -25,8 +25,13 @@ public class Main13 {
         listBuku.tampil();
 
         System.out.println("********************************************************************************");
-        System.out.println("Data setelah diturunkan secara Desc berdasarkan stock Menggunakan selection sort");
+        System.out.println("Data setelah diturunkan secara Desc berdasarkan stock Menggunakan Selection sort");
         listBuku.selectionSort();
+        listBuku.tampil();
+
+        System.out.println("********************************************************************************");
+        System.out.println("Data setelah diturunkan secara Asc berdasarkan stock Menggunakan Insertion sort");
+        listBuku.insertionSort();
         listBuku.tampil();
     }
 }
