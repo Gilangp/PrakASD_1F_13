@@ -44,10 +44,16 @@ public class BukuMain13 {
         data.Tampilposisi(cari, posisi);
         data.TambahData(cari, posisi);
 
-        System.out.println("\n___________________________");
-        System.out.println("___________________________");
-        System.out.println("Menggunakan method FindBuku");
-        Buku13 dataBuku13 = data.FindBuku(cari);
-        dataBuku13.tampilDataBuku();;
+        // System.out.println("\n___________________________");
+        // System.out.println("___________________________");
+        // System.out.println("Menggunakan method FindBuku");
+        // Buku13 dataBuku13 = data.FindBuku(cari);
+        // dataBuku13.tampilDataBuku();
+
+        System.out.println("\n========================");
+        System.out.println("Menggunkan Binary Search");
+        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+        data.Tampilposisi(cari, posisi);
+        data.TambahData(cari, posisi);
     }
 }
