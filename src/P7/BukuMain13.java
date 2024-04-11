@@ -43,5 +43,11 @@ public class BukuMain13 {
         int posisi = data.FindSeqSearch(cari);
         data.Tampilposisi(cari, posisi);
         data.TambahData(cari, posisi);
+
+        System.out.println("\n___________________________");
+        System.out.println("___________________________");
+        System.out.println("Menggunakan method FindBuku");
+        Buku13 dataBuku13 = data.FindBuku(cari);
+        dataBuku13.tampilDataBuku();;
     }
 }

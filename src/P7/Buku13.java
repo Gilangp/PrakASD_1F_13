@@ -16,10 +16,10 @@ public class Buku13 {
     }
 
     public void tampilDataBuku() {
-        System.out.println("Kode buku : " + kodeBuku);
-        System.out.println("Judul buku : " + judulBuku);
-        System.out.println("Tahun Terbit : " + tahunTerbit);
-        System.out.println("Pengarang : " + pengarang);
-        System.out.println("Stock : " + stock);
+        System.out.println("Kode buku\t : " + kodeBuku);
+        System.out.println("Judul buku\t : " + judulBuku);
+        System.out.println("Tahun Terbit\t : " + tahunTerbit);
+        System.out.println("Pengarang\t : " + pengarang);
+        System.out.println("Stock\t\t : " + stock);
     }
 }
