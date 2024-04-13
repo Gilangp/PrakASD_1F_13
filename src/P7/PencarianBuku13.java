@@ -49,14 +49,14 @@ public class PencarianBuku13 {
         }
     }
 
-    public Buku13 FindBuku (int cari) {
-        for (int j = 0; j < listBk.length; j++) {
-            if (listBk[j].kodeBuku == cari) {
-                return listBk[j];
-            }
-        }
-        return null;
-    }
+    // public Buku13 FindBuku (int cari) {
+    //     for (int j = 0; j < listBk.length; j++) {
+    //         if (listBk[j].kodeBuku == cari) {
+    //             return listBk[j];
+    //         }
+    //     }
+    //     return null;
+    // }
 
     public int FindBinarySearch(int cari, int left, int right) {
         int mid;
@@ -64,7 +64,7 @@ public class PencarianBuku13 {
             mid = (right + left) / 2;
             if (cari == listBk[mid].kodeBuku) {
                 return (mid);
-            } else if (listBk[mid].kodeBuku > cari) {
+            } else if (listBk[mid].kodeBuku < cari) {
                 return FindBinarySearch(cari, left, mid - 1);
             } else {
                 return FindBinarySearch(cari, mid + 1, right);
