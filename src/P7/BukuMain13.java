@@ -15,7 +15,7 @@ public class BukuMain13 {
         for (int i = 0; i < jumBuku; i++) {
             System.out.println("------------------");
             System.out.print("Kode Buku \t : ");
-            int kodeBuku = s.nextInt();
+            String kodeBuku = s1.nextLine();
             System.out.print("Judul Buku \t : ");
             String judulBuku = s1.nextLine();
             System.out.print("Tahun Terbit \t : ");
@@ -38,9 +38,9 @@ public class BukuMain13 {
         System.out.println("Pencarian Data : ");
         System.out.println("Masukkan Kode Buku yang dicari : ");
         System.out.print("Kode Buku : ");
-        int cari = s.nextInt();
+        String cari = s1.nextLine();
         System.out.println("Menggunakan Sequential Search");
-        int posisi = data.FindSeqSearch(cari);
+        int posisi = data.FindSeqSearchString(cari);
         data.Tampilposisi(cari, posisi);
         data.TambahData(cari, posisi);
 
@@ -52,7 +52,7 @@ public class BukuMain13 {
 
         System.out.println("\n========================");
         System.out.println("Menggunkan Binary Search");
-        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+        posisi = data.FindBinarySearchString(cari, 0, jumBuku - 1);
         data.Tampilposisi(cari, posisi);
         data.TambahData(cari, posisi);
     }
