@@ -35,8 +35,9 @@ public class Utama13 {
                     break;
                 case 3:
                     gudang.tampilkanBarang();
-                case 4:
                     break;
+                case 4:
+                    System.exit(0);
                 default:
                     System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
             }

@@ -50,7 +50,7 @@ public class Gudang13 {
     }
 
     public Barang13 lihatBarangTeratas() {
-        if (!isEmpty) {
+        if (!cekKosong()) {
             Barang13 barangTeratas =  tumpukan[top];
             System.out.println("Barang teratas: " + barangTeratas.nama);
             return barangTeratas;
@@ -64,7 +64,7 @@ public class Gudang13 {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan barang di Gudang: ");
 
-            for (int i = 0; i <= top; i++) {
+            for (int i = top; i >= 0; i--) {
                 System.out.printf("Kode %d: %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama, 
                 tumpukan[i].kategori);
             }
