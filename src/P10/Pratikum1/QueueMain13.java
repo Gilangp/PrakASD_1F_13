@@ -1,4 +1,4 @@
-package Pratikum1;
+package P10.Pratikum1;
 
 import java.util.Scanner;
 

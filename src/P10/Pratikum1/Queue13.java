@@ -1,4 +1,4 @@
-package Pratikum1;
+package P10.Pratikum1;
 
 public class Queue13 {
     int[] data;
