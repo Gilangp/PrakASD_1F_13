@@ -93,8 +93,8 @@ public class SingleLinkedList13 {
             tmp = tmp.next;
             index++;
         }
-        if (tmp == null) {
-            return 1;
+        if (tmp != null) {
+            return -1;
         } else {
             return index;
         }
@@ -116,7 +116,7 @@ public class SingleLinkedList13 {
             System.out.println("Linked List masih kosong," 
                     + "tidak dapat dihapus");
         } else if (head == tail) {
-            tail = null;
+            head = tail = null;
         } else {
             Node13 temp = head;
             while (temp.next == null) {
