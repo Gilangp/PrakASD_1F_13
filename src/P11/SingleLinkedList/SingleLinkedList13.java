@@ -93,8 +93,8 @@ public class SingleLinkedList13 {
             tmp = tmp.next;
             index++;
         }
-        if (tmp != null) {
-            return -1;
+        if (tmp == null) {
+            return 1;
         } else {
             return index;
         }
