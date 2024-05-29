@@ -11,6 +11,31 @@ public class BinaryTree13 {
         return root == null;
     }
 
+    // void add(int data) {
+    //     if (isEmpty()) {
+    //         root = new Node13(data);
+    //     } else {
+    //         Node13 current = root;
+    //         while (true) {
+    //             if (data < current.data) {
+    //                 if (current.left != null) {
+    //                     current = current.left;
+    //                 } else {
+    //                     current.left = new Node13(data);
+    //                     break;
+    //                 }
+    //             } else {
+    //                 if (current.right != null) {
+    //                     current = current.right;
+    //                 } else {
+    //                     current.right = new Node13(data);
+    //                     break;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }    
+
     void add(int data) {
         root = addRecursive(root, data);
     }
