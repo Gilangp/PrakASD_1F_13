@@ -179,4 +179,22 @@ public class BinaryTree13 {
             }
         }
     }
+
+    public int minValue(Node13 node) {
+        int minValue = node.data;
+        while (node.left != null) {
+            minValue = node.left.data;
+            node = node.left;
+        }
+        return minValue;
+    }
+
+    public int maxValue(Node13 node) {
+        int maxValue = node.data;
+        while (node.right != null) {
+            maxValue = node.right.data;
+            node = node.right;
+        }
+        return maxValue;
+    }
 }
