@@ -208,4 +208,14 @@ public class BinaryTree13 {
         displayleaf(node.left);
         displayleaf(node.right);
     }
+
+    public int countLeaf(Node13 node) {
+        if (node == null) {
+            return 0;
+        }
+        if (node.left == null && node.right == null) {
+            return 1;
+        }
+        return countLeaf(node.left) + countLeaf(node.right);
+    }
 }

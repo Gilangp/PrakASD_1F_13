@@ -33,5 +33,7 @@ public class BinaryTreeMain13 {
         System.out.println("Max value  : " + bt.maxValue(bt.root));
         System.out.print("Data leaf : ");
         bt.displayleaf(bt.root);
+        System.out.println("");
+        System.out.println("Jumlah leaf : " + bt.countLeaf(bt.root));
     }
 }
