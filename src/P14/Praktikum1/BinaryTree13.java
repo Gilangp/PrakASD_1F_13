@@ -12,28 +12,19 @@ public class BinaryTree13 {
     }
 
     void add(int data) {
-        if (isEmpty()) {
-            root = new Node13(data);
-        } else {
-            Node13 current = root;
-            while (true) {
-                if (data < current.data) {
-                    if (current.left != null) {
-                        current = current.left;
-                    } else {
-                        current.left = new Node13(data);
-                        break;
-                    }
-                } else {
-                    if (current.right != null) {
-                        current = current.right;
-                    } else {
-                        current.right = new Node13(data);
-                        break;
-                    }
-                }
-            }
+        root = addRecursive(root, data);
+    }
+
+    public Node13 addRecursive(Node13 current, int data) {
+        if (current == null) {
+            return new Node13(data);
         }
+        if (data < current.data) {
+            current.left = addRecursive(current.left, data);
+        } else if (data > current.data) {
+            current.right = addRecursive(current.right, data);
+        }
+        return current;
     }
 
     boolean find(int data) {
