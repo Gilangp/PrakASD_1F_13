@@ -197,4 +197,15 @@ public class BinaryTree13 {
         }
         return maxValue;
     }
+
+    public void displayleaf(Node13 node) {
+        if (node == null) {
+            return;
+        }
+        if (node.left == null && node.right == null) {
+            System.out.print(node.data + " ");
+        }
+        displayleaf(node.left);
+        displayleaf(node.right);
+    }
 }
