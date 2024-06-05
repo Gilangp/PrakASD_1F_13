@@ -1,4 +1,4 @@
-package P15;
+package P15.Percobaan1;
 
 public class Node13 {
     int data;

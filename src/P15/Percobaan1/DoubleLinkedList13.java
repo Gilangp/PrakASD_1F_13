@@ -1,4 +1,4 @@
-package P15;
+package P15.Percobaan1;
 
 public class DoubleLinkedList13 {
     Node13 head;

@@ -1,4 +1,4 @@
-package P15;
+package P15.Percobaan1;
 
 public class GraphMain13 {
     public static void main(String[] args) throws Exception {
