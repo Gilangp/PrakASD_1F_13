@@ -41,11 +41,7 @@ public class Graph13 {
     }
 
     public void removeEdge(int asal, int tujuan) throws Exception {
-        for (int i = 0; i < vertex; i++) {
-            if (i == tujuan) {
-                list[asal].remove(tujuan);
-            }
-        }
+        list[asal].remove(tujuan);
     }
 
     public void removeAllEdges() {
