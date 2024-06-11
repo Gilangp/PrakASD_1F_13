@@ -12,7 +12,8 @@ public class GraphMain13 {
         System.out.println("3. Degree");
         System.out.println("4. Print Graph");
         System.out.println("5. Cek Edge");
-        System.out.println("6. Exit");
+        System.out.println("6. Update Jarak");
+        System.out.println("7. Exit");
         System.out.println("---------------------");
     }
     public static void main(String[] args) throws Exception {
@@ -61,6 +62,15 @@ public class GraphMain13 {
                     gedung.cekEdge(asal, tujuan);
                     break;
                 case 6:
+                    System.out.println("Masukkan Gedung asal");
+                    asal = in.nextInt();
+                    System.out.println("Masukkan Gedung tujuan");
+                    tujuan = in.nextInt();
+                    System.out.println("Masukkan jumlah jarak");
+                    int jarakBaru = in.nextInt();
+                    gedung.updateJarak(asal, tujuan, jarakBaru);
+                    break;
+                case 7:
                     System.exit(0);
                 default:
                     System.out.println("Pilihan tidak tersedia");

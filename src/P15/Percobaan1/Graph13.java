@@ -83,4 +83,8 @@ public class Graph13 {
         }
         System.out.println("Tidak ada jarak antar gedung " + (char) ('A' + asal) + " dan gedung " + (char) ('A' + tujuan));
     }
+
+    public void updateJarak(int asal, int tujuan, int jarakBaru) throws Exception {
+        list[asal].jarak(tujuan, jarakBaru);
+    }
 }

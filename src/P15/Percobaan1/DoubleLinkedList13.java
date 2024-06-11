@@ -73,4 +73,15 @@ public class DoubleLinkedList13 {
             current = current.next;
         }
     }
+
+    public void jarak(int tujuan, int jarakBaru) throws Exception {
+        Node13 current = head;
+        while (current != null) {
+            if (current.data == tujuan) {
+                current.jarak = jarakBaru;
+                return;
+            }
+            current= current.next;
+        }
+    }
 }
