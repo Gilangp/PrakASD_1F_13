@@ -73,4 +73,14 @@ public class Graph13 {
         }
         System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " tidak bertetangga");
     }
+
+    public void cekEdge(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                System.out.println("Jarak antar gedung " + (char) ('A' + asal) + " dan gedung " + (char) ('A' + tujuan) + " : " + list[asal].getJarak(i) + " m");
+                return;
+            }
+        }
+        System.out.println("Tidak ada jarak antar gedung " + (char) ('A' + asal) + " dan gedung " + (char) ('A' + tujuan));
+    }
 }
