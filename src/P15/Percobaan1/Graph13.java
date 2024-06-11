@@ -87,4 +87,12 @@ public class Graph13 {
     public void updateJarak(int asal, int tujuan, int jarakBaru) throws Exception {
         list[asal].jarak(tujuan, jarakBaru);
     }
+
+    public int hitungEdge() {
+        int jmlEdge = 0;
+        for (int i = 0; i < vertex; i++) {
+            jmlEdge += list[i].size();
+        }
+        return jmlEdge;
+    }
 }

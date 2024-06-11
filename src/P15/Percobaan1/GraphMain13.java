@@ -13,7 +13,8 @@ public class GraphMain13 {
         System.out.println("4. Print Graph");
         System.out.println("5. Cek Edge");
         System.out.println("6. Update Jarak");
-        System.out.println("7. Exit");
+        System.out.println("7. Hitung Edge");
+        System.out.println("8. Exit");
         System.out.println("---------------------");
     }
     public static void main(String[] args) throws Exception {
@@ -71,6 +72,10 @@ public class GraphMain13 {
                     gedung.updateJarak(asal, tujuan, jarakBaru);
                     break;
                 case 7:
+                    int total = gedung.hitungEdge();
+                    System.out.println("Total Edge : " + total);
+                    break;
+                case 8:
                     System.exit(0);
                 default:
                     System.out.println("Pilihan tidak tersedia");
